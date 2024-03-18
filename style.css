@@ -19,14 +19,17 @@ nav {
 
 #logo {
 position: relative;
-top: 10px;
+top: 12px;
 margin-left: 25px;
 color: black;
+animation: mover 10s ease-in-out infinite;
 }
 
 #icone-menu {
     position: relative;
+    top: 2px;
     right: -10px;
+
 }
 
 #listra-menu::before {
@@ -65,7 +68,7 @@ color: black;
     position: fixed;
     width: 60%;
     height: 100vh;
-    background: #FF69B4;
+    background: #ff3298;
     transition: 0.3s;
     transform: translateX(-100%);
     z-index: 1000;
@@ -84,15 +87,91 @@ color: black;
     align-items: center;
     overflow-x: auto;
 }
-#rolagem::-webkit-scrollbar {
+#rolagem::-webkit-scrollbar, #rolagem2::-webkit-scrollbar {
     display: none;
 }
 .img-rolagem {
-    background: #FF69B4 url('https://i.pinimg.com/originals/fc/e5/a3/fce5a351f9a251479fd978e5ba072674.png') no-repeat;
+    background: url('imagens/banners/R$\ 250.png') no-repeat;
     background-size: contain;
     background-position: right center;
-    min-width: 17em;
-    min-height: 10em;
+    min-width: 300px;
+    min-height: 150px;
     margin-left: 20px;
     border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
+}
+
+/************* SESSÃO 1 *************/
+#sessao1 {
+    width: 90%;
+    height: 200px;
+    position: absolute;
+    left: 5%;
+    top: 270px;
+    columns: 4;
+}
+.icone {
+    background: #ff3298;
+    width: 55px;
+    height: 55px;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 13px;
+    background: url('imagens/icones/Design\ sem\ nome.png') no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.icone-p {
+    position: relative;
+    top: 60px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/************* SESSÃO 1 *************/
+#sessao2 {
+    position: relative;
+    top: 470px;
+    width: 100%;
+    height: 200px;
+}
+
+#titulo-s2 {
+    position: relative;
+    bottom: 10px;
+    margin-left: 25px;
+}
+
+#rolagem2 {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.box-img-rolagem2 {
+    height: 14em;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.356);
+}
+.img-rolagem2 {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5S8v4YtR5XtagR5HDrXhi2rk4r3ihSUR_EZmXEgSjeL_97SAUjWQ1zzpNRs9FqJM8PZc&usqp=CAU') no-repeat;
+    background-size: contain;
+    background-position: right center;
+    min-width: 10em;
+    min-height: 10em;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
+}
+.rolagem2-texto {
+    color: black;
+    width: 7em;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
 }
