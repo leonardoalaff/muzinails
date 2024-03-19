@@ -27,28 +27,26 @@ body {
     background: url('imagens/icones/home.png') no-repeat;
     background-position: center center;
     background-size: contain;
-    transition: 0.3s;
 }
 .home.active {
     background: url('imagens/icones/home2.png') no-repeat;
     background-position: center center;
     background-size: contain;
-    transition: 0.3s;
-    animation: flutuar 1s ease-in-out infinite;
+    transition: 1s;
+    transform: rotateY(360deg);
 }
 
 .calendario {
     background: url('imagens/icones/calendario.png') no-repeat;
     background-position: center center;
     background-size: contain;
-    transition: 0.3s;
 }
 .calendario.active {
     background: url('imagens/icones/calendario2.png') no-repeat;
     background-position: center center;
     background-size: contain;
-    transition: 0.3s;
-    animation: flutuar 1s ease-in-out infinite;
+    transition: 1s;
+    transform: rotateY(360deg);
 }
 
 .msg {
@@ -61,8 +59,8 @@ body {
     background: url('imagens/icones/msg2.png') no-repeat;
     background-position: center center;
     background-size: contain;
-    transition: 0.3s;
-    animation: flutuar 1s ease-in-out infinite;
+    transition: 1s;
+    transform: rotateY(360deg);
 }
 
 @keyframes flutuar {
@@ -86,6 +84,7 @@ nav {
 
 #cabeca {
     position: relative;
+    z-index: 1;
 }
 
 #logo {
@@ -210,3 +209,47 @@ footer {
 footer p {
     color: white;
 }
+
+
+/************* SESSÃO 3 *************/
+#sessao3 {
+    background: white;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    transition: 0.3s;
+}
+#sessao3.active {
+    right: 0;
+    transition: 0.3s;
+}
+
+table {
+    background: #ff3298;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+  }
+
+  th, td {
+    text-align: center;
+    padding: 8px;
+    color: white;
+    border-radius: 50px;
+  }
+
+  th {
+    background: #ff3298;
+  }
+
+  td {
+    cursor: pointer;
+  }
+
+  td:hover {
+    background-color: #f80e83;
+  }
