@@ -7,6 +7,16 @@ const calendario = document.querySelector('.calendario')
 const sessao3 = document.querySelector('#sessao3')
 const sessao4 = document.querySelector('#sessao4')
 
+function homeOpen() {
+  if(msg.classList.contains('active') || calendario.classList.contains('active')) {
+    home.classList.remove('active')
+  } else {
+    home.classList.add('active')
+  }
+}
+
+homeOpen()
+
 msg.addEventListener('click', () => {
     msg.classList.add('active')
     home.classList.remove('active')

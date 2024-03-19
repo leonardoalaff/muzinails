@@ -8,7 +8,7 @@
 }
 
 body {
-    height: 115vh;
+    height: 120vh;
 }
 
 #menu {
@@ -125,6 +125,8 @@ animation: mover 10s ease-in-out infinite;
     margin-top: 26vh;
 }
 .carreira {
+    position: relative;
+    top: 15px;
     display: flex;
 }
 .icone {
@@ -141,6 +143,7 @@ animation: mover 10s ease-in-out infinite;
 .icone-p {
     position: relative;
     top: 60px;
+    left: 2px;
     font-size: 0.6rem;
     font-weight: bold;
 }
@@ -149,7 +152,7 @@ animation: mover 10s ease-in-out infinite;
 #sessao2 {
     position: absolute;
     top: 0;
-    margin-top: 60vh;
+    margin-top: 65vh;
     width: 100%;
 }
 
@@ -197,7 +200,7 @@ animation: mover 10s ease-in-out infinite;
 footer {
     background: #ff3298;
     position: absolute;
-    top: 100vh;
+    top: 105vh;
     width: 100%;
     height: 4vh;
     display: flex;
@@ -268,20 +271,21 @@ table {
     border-radius: 50%;
     z-index: 2;
     transition: 0.3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.568);
   }
   #sessao4.active {
     left: -50%;
     transition: 0.3s;
   }
   .icone-social {
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     background: white;
     border-radius: 50%;
     margin: 10px;
   }
   .social1 {
-    background: url('imagens/icones/wpp.png') no-repeat;
+    background: url('imagens/icones/instagram.png') no-repeat;
     background-position: center center;
     background-size: cover;
     position: absolute;
@@ -289,10 +293,17 @@ table {
     left: 50%;
   }
   .social2 {
+    background: url('imagens/icones/wpp.png') no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 100px;
     position: absolute;
-    left: 70%;
+    left: 60%;
   }
   .social3 {
+    background: url('imagens/icones/facebook.png') no-repeat;
+    background-position: center center;
+    background-size: cover;
     position: absolute;
     bottom: 5vh;
     left: 50%;
