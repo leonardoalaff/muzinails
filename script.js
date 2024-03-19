@@ -5,12 +5,14 @@ const msg = document.querySelector('.msg')
 const home = document.querySelector('.home')
 const calendario = document.querySelector('.calendario')
 const sessao3 = document.querySelector('#sessao3')
+const sessao4 = document.querySelector('#sessao4')
 
 msg.addEventListener('click', () => {
     msg.classList.add('active')
     home.classList.remove('active')
     calendario.classList.remove('active')
     sessao3.classList.remove('active')
+    sessao4.classList.add('active')
 })
 
 home.addEventListener('click', () => {
@@ -18,6 +20,7 @@ home.addEventListener('click', () => {
     home.classList.add('active')
     calendario.classList.remove('active')
     sessao3.classList.remove('active')
+    sessao4.classList.remove('active')
 })
 
 calendario.addEventListener('click', () => {
@@ -25,8 +28,10 @@ calendario.addEventListener('click', () => {
     msg.classList.remove('active')
     home.classList.remove('active')
     sessao3.classList.add('active')
+    sessao4.classList.remove('active')
     
 })
+
 
 //************** CALENDÁRIO *************/
 function createCalendar(year, month) {
