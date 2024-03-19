@@ -53,7 +53,6 @@ body {
     background: url('imagens/icones/msg.png') no-repeat;
     background-position: center center;
     background-size: contain;
-    transition: 0.3s;
 }
 .msg.active {
     background: url('imagens/icones/msg2.png') no-repeat;
@@ -252,4 +251,41 @@ table {
 
   td:hover {
     background-color: #f80e83;
+  }
+
+
+  /************* SESSÃO 4 *************/
+  #sessao4 {
+    background: red;
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    border-radius: 50%;
+    top: -30%;
+    left: -60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  .icone-social {
+    background: green;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 120px;
+    border-radius: 50%;
+  }
+  .social1 {
+    background: black;
+  }
+  .social2 {
+    top: 80px;
+    left: 120px;
+    background: grey;
+  }
+  .social3 {
+    background: white;
+    top: 150px;
+    left: 100px;
   }
