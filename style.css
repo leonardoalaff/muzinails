@@ -240,7 +240,7 @@ margin-top: 15px;
     background: white;
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
     overflow: hidden;
     width: 100%;
     height: 100vh;
@@ -278,6 +278,36 @@ table {
     background-color: #f80e83;
   }
 
+
+  .titulo-s3 {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .marcar-dia {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .opcao {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+  }
+  .opcao p {
+    margin: 7px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+
+  .marcar-horario {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .marcar-horario h5 {
+    margin-top: 5px;
+  }
 
   /************* SESSÃO 4 *************/
   #sessao4 {

@@ -6,6 +6,8 @@ const home = document.querySelector('.home')
 const calendario = document.querySelector('.calendario')
 const sessao3 = document.querySelector('#sessao3')
 const sessao4 = document.querySelector('#sessao4')
+const conferir = document.querySelector('.conferir')
+
 
 function homeOpen() {
   if(msg.classList.contains('active') || calendario.classList.contains('active')) {
@@ -106,3 +108,28 @@ function createCalendar(year, month) {
 
   horario()
   setInterval(horario(), 1000)
+
+
+  //******** MARCAR HORÁRIO *********/
+  let pedido = {
+    terca: 'Terça feira',
+    quarta: 'Quarta feira',
+    quinta: 'Quinta feira',
+    sexta: 'sexta feira',
+    sabado: 'Sábado',
+
+    oitoM: '08:00',
+    noveM: '09:00',
+    dezM: '10:00',
+    onzeM: '11:00',
+
+    umaT: '13:00',
+    duasT: '14:00',
+    tresT: '15:00',
+    quatroT: '16:00',
+    cincoT: '17:00'
+  }
+
+  conferir.addEventListener('click', () => {
+    
+  })
