@@ -12,12 +12,9 @@
 body {
     height: 130vh;
 }
-html::-webkit-scrollbar {
-    display: none;
-}
 
 #menu {
-    height: 10vh;
+    height: 8vh;
     background: white;
     position: fixed;
     bottom: 0;
@@ -240,16 +237,15 @@ margin-top: 15px;
     background: white;
     position: fixed;
     top: 0;
-    right: 0;
-    overflow: hidden;
+    right: -100%;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     z-index: 2;
     transition: 0.3s;
 }
 #sessao3.active {
-    right: 0;
     transition: 0.3s;
+    right: 0;
 }
 
 table {
@@ -280,13 +276,16 @@ table {
 
 
   .titulo-s3 {
-    font-size: 20px;
+    font-size: 1em;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 
   .marcar-dia {
-    margin-top: 30px;
-    margin-left: 10px;
+    margin-top: 3vh;
+    margin-left: 5%;
   }
   .opcao {
     display: flex;
@@ -296,18 +295,41 @@ table {
   .opcao p {
     margin: 7px;
     border: 1px solid black;
-    padding: 5px 10px;
+    padding: 2.5px 5px;
     border-radius: 5px;
     font-size: 13px;
   }
 
   .marcar-horario {
-    margin-top: 30px;
+    margin-top: 3vh;
     margin-left: 10px;
   }
   .marcar-horario h5 {
     margin-top: 5px;
+    color: gray;
   }
+
+  .ter.active, .qua.active, .qui.active, .sex.active, .sab.active,
+  
+  .oit.active, .nov.active, .dez.active, .onz.active,
+  
+  .uma.active, .duas.active, .tres.active, .quatro.active, .cinco.active {
+    background: #f80e83;
+    color: white;
+    border: 1px solid #f80e83;
+    transition: 0.3s;
+}
+
+.conferir {
+    background: #ff3298;
+    width: 30%;
+    padding: 10px 5%;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-top: 2vh;
+}
 
   /************* SESSÃO 4 *************/
   #sessao4 {
@@ -364,14 +386,19 @@ table {
     top: 110vh;
     width: 100%;
     height: 12vh;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 footer p {
     color: white;
+    margin: 14px;
 }
 .leonardo {
     text-align: center;
     align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }
