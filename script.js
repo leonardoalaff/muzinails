@@ -86,3 +86,23 @@ function createCalendar(year, month) {
   const currentMonth = now.getMonth();
 
   document.getElementById('calendar').innerHTML = createCalendar(currentYear, currentMonth);
+
+
+
+  function horario() {
+    let today = new Date()
+    let diaDaSemana = today.getDay()
+    let hora = today.getHours()
+    let minuto = today.getMinutes()
+
+    if(diaDaSemana >= 2 && diaDaSemana <=6 && hora >= 8 && hora <= 18) {
+      fechado.classList.remove('active')
+      aberto.classList.add('active')
+    } else {
+      aberto.classList.remove('active')
+      fechado.classList.add('active')
+    }
+  }
+
+  horario()
+  setInterval(horario(), 1000)
