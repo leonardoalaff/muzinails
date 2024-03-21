@@ -21,6 +21,7 @@ const duas = document.querySelector('.duas')
 const tres = document.querySelector('.tres')
 const quatro = document.querySelector('.quatro')
 const cinco = document.querySelector('.cinco')
+let informacao = document.querySelector('.informacao')
 
 
 
@@ -69,6 +70,7 @@ const tbody = document.querySelector('#calendario tbody');
   let mesSelecionado = null;
   let diaDaSemanaSelecionado = null;
 
+
   function criarCalendario(mes, ano) {
     tbody.innerHTML = '';
 
@@ -107,6 +109,7 @@ const tbody = document.querySelector('#calendario tbody');
       }
       tbody.appendChild(semana);
     }
+
   }
 
   function selecionarNumero(numero, mes) {
@@ -146,12 +149,6 @@ const tbody = document.querySelector('#calendario tbody');
 
   //******** MARCAR HORÁRIO *********/
   let pedido = {
-    terca: 'na próxima TERÇA FEIRA',
-    quarta: 'na próxima QUARTA FEIRA',
-    quinta: 'na próxima QUINTA FEIRA',
-    sexta: 'na próxima SEXTA FEIRA',
-    sabado: 'no próximo SÁBADO',
-
     oitoM: '08:00',
     noveM: '09:00',
     dezM: '10:00',
@@ -163,42 +160,6 @@ const tbody = document.querySelector('#calendario tbody');
     quatroT: '16:00',
     cincoT: '17:00'
   }
-
-  ter.addEventListener('click', () => {
-    ter.classList.add('active')
-    qua.classList.remove('active')
-    qui.classList.remove('active')
-    sex.classList.remove('active')
-    sab.classList.remove('active')
-  })
-  qua.addEventListener('click', () => {
-    ter.classList.remove('active')
-    qua.classList.add('active')
-    qui.classList.remove('active')
-    sex.classList.remove('active')
-    sab.classList.remove('active')
-  })
-  qui.addEventListener('click', () => {
-    ter.classList.remove('active')
-    qua.classList.remove('active')
-    qui.classList.add('active')
-    sex.classList.remove('active')
-    sab.classList.remove('active')
-  })
-  sex.addEventListener('click', () => {
-    ter.classList.remove('active')
-    qua.classList.remove('active')
-    qui.classList.remove('active')
-    sex.classList.add('active')
-    sab.classList.remove('active')
-  })
-  sab.addEventListener('click', () => {
-    ter.classList.remove('active')
-    qua.classList.remove('active')
-    qui.classList.remove('active')
-    sex.classList.remove('active')
-    sab.classList.add('active')
-  })
 
 
   oit.addEventListener('click', () => {
@@ -361,11 +322,9 @@ const tbody = document.querySelector('#calendario tbody');
     }
     if(horas >= 18 && horas <= 23 ) {
       cumprimento = 'Boa noite'
-    } 
+    }
 
-    // `${cumprimento}, você está disponível no dia`
-
-    let mensagem = `Você selecionou o dia ${numeroSelecionado} de ${mesesDoAno[mesSelecionado]} (${diaDaSemanaSelecionado})`
+    let mensagem = `${cumprimento}, você está disponível no dia ${numeroSelecionado} de ${mesesDoAno[mesSelecionado]} (${diaDaSemanaSelecionado}) às ${hora}?`
 
     window.open(`https://wa.me/5533984523678?text=${mensagem}`)
   })

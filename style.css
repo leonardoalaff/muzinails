@@ -237,7 +237,7 @@ margin-top: 15px;
     background: white;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     width: 100%;
     height: 200vh;
     z-index: 2;
@@ -272,7 +272,7 @@ table {
   }
 
   td:hover {
-    background-color: #f80e83;
+    background-color: #72053b;
   }
 
   .dia-atual {
@@ -284,17 +284,13 @@ table {
   }
 
 
+
   .titulo-s3 {
-    font-size: 1em;
-    margin: 10px;
+    font-size: 1.4em;
+    margin-top: 5vh;
     display: flex;
     justify-content: center;
     text-align: center;
-  }
-
-  .marcar-dia {
-    margin-top: 3vh;
-    margin-left: 5%;
   }
   .opcao {
     display: flex;
@@ -310,15 +306,13 @@ table {
   }
 
   .marcar-horario {
-    margin-top: 3vh;
+    margin-top: 8vh;
     margin-left: 10px;
   }
   .marcar-horario h5 {
-    margin-top: 5px;
+    margin-top: 2vh;
     color: gray;
   }
-
-  .ter.active, .qua.active, .qui.active, .sex.active, .sab.active,
   
   .oit.active, .nov.active, .dez.active, .onz.active,
   
@@ -337,7 +331,7 @@ table {
     color: white;
     border-radius: 10px;
     margin-left: 35%;
-    margin-top: 2vh;
+    margin-top: 5vh;
 }
 
   /************* SESSÃO 4 *************/
