@@ -237,7 +237,7 @@ margin-top: 15px;
     background: white;
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
     width: 100%;
     height: 200vh;
     z-index: 2;
@@ -250,8 +250,8 @@ margin-top: 15px;
 
 table {
     background: #ff3298;
-    border-collapse: collapse;
     width: 100%;
+    border-collapse: collapse;
     border-radius: 0 0 30px 30px;
   }
 
@@ -260,6 +260,7 @@ table {
     padding: 8px;
     color: white;
     border-radius: 50px;
+    font-size: 0.65em;
   }
 
   th {
@@ -272,6 +273,14 @@ table {
 
   td:hover {
     background-color: #f80e83;
+  }
+
+  .dia-atual {
+    background: white;
+    color: #f80e83;
+  }
+  #mes-ano {
+    color: red;
   }
 
 

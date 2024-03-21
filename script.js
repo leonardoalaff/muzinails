@@ -63,48 +63,65 @@ calendario.addEventListener('click', () => {
 
 
 //************** CALENDÁRIO *************/
-function createCalendar(year, month) {
-    const monthNames = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
-    const today = new Date();
-    const firstDay = new Date(year, month, 1);
-    const lastDay = new Date(year, month + 1, 0);
-    const daysInMonth = lastDay.getDate();
+const tbody = document.querySelector('#calendario tbody');
+  const mesAtualElement = document.getElementById('mes-atual');
+  let numeroSelecionado = null;
+  let mesSelecionado = null;
+  let diaDaSemanaSelecionado = null;
 
-    let calendarHTML = '<table>';
-    calendarHTML += '<tr><th colspan="7">' + monthNames[month] + ' ' + year + '</th></tr>';
-    calendarHTML += '<tr><th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sab</th></tr>';
+  function criarCalendario(mes, ano) {
+    tbody.innerHTML = '';
 
-    let dayCounter = 1;
-    for (let i = 0; i < 6; i++) {
-      calendarHTML += '<tr>';
-      for (let j = 0; j < 7; j++) {
-        if (i === 0 && j < firstDay.getDay()) {
-          calendarHTML += '<td></td>';
-        } else if (dayCounter > daysInMonth) {
-          calendarHTML += '<td></td>';
-        } else {
-          const currentDate = new Date(year, month, dayCounter);
-          if (currentDate.toDateString() === today.toDateString()) {
-            calendarHTML += '<td style="background-color: white; color: #ff3298;">' + dayCounter + '</td>';
-          } else {
-            calendarHTML += '<td>' + dayCounter + '</td>';
-          }
-          dayCounter++;
-        }
-      }
-      calendarHTML += '</tr>';
+    const primeiroDiaDoMes = new Date(ano, mes, 1);
+    const ultimoDiaDoMes = new Date(ano, mes + 1, 0);
+
+    // Encontrando o primeiro domingo do mês
+    let diaAtual = new Date(primeiroDiaDoMes);
+    while (diaAtual.getDay() !== 0) {
+      diaAtual.setDate(diaAtual.getDate() - 1);
     }
 
-    calendarHTML += '</table>';
+    // Definindo o mês e ano atual no cabeçalho do calendário
+    const proximoMes = new Date(ano, mes, 1);
+    const mesAtual = proximoMes.toLocaleString('default', { month: 'long' });
+    const anoAtual = proximoMes.getFullYear();
+    mesAtualElement.textContent = `${mesAtual} de ${anoAtual}`;
 
-    return calendarHTML;
+    const dataAtual = new Date();
+    const diaAtualDoMes = dataAtual.getDate();
+    const mesAtualDoMes = dataAtual.getMonth();
+
+    while (diaAtual <= ultimoDiaDoMes) {
+      const semana = document.createElement('tr');
+      for (let i = 0; i < 7; i++) {
+        const dia = document.createElement('td');
+        const numero = diaAtual.getDate();
+        const mes = diaAtual.getMonth();
+        dia.textContent = numero;
+        dia.addEventListener('click', () => selecionarNumero(numero, mes));
+        if (numero === diaAtualDoMes && mes === mesAtualDoMes) {
+          dia.classList.add('dia-atual');
+        }
+        semana.appendChild(dia);
+        diaAtual.setDate(diaAtual.getDate() + 1);
+      }
+      tbody.appendChild(semana);
+    }
   }
 
-  const now = new Date();
-  const currentYear = now.getFullYear();
-  const currentMonth = now.getMonth();
+  function selecionarNumero(numero, mes) {
+    numeroSelecionado = numero;
+    mesSelecionado = mes;
+    const diasDaSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+    const dataSelecionada = new Date(new Date().getFullYear(), mesSelecionado, numeroSelecionado);
+    diaDaSemanaSelecionado = diasDaSemana[dataSelecionada.getDay()];
+    
+  }
+  
+  const mesesDoAno = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 
-  document.getElementById('calendar').innerHTML = createCalendar(currentYear, currentMonth);
+  const dataAtual = new Date();
+  criarCalendario(dataAtual.getMonth(), dataAtual.getFullYear());
 
 
 
@@ -300,29 +317,10 @@ function createCalendar(year, month) {
 
   conferir.addEventListener('click', () => {
     let today = new Date()
-    let diaDaSemana = today.getDay()
     let horas = today.getHours()
 
-
-    let dia = undefined
     let hora = undefined
     let cumprimento = undefined
-
-    if(ter.classList.contains('active')) {
-      dia = pedido.terca
-    }
-    if(qua.classList.contains('active')) {
-      dia = pedido.quarta
-    }
-    if(qui.classList.contains('active')) {
-      dia = pedido.quinta
-    }
-    if(sex.classList.contains('active')) {
-      dia = pedido.sexta
-    }
-    if(sab.classList.contains('active')) {
-      dia = pedido.sabado
-    }
 
 
     if(oit.classList.contains('active')) {
@@ -365,7 +363,9 @@ function createCalendar(year, month) {
       cumprimento = 'Boa noite'
     } 
 
-    let mensagem = `${cumprimento}, eu gostaria de saber se você está disponível ${dia} às ${hora}.`
+    // `${cumprimento}, você está disponível no dia`
+
+    let mensagem = `Você selecionou o dia ${numeroSelecionado} de ${mesesDoAno[mesSelecionado]} (${diaDaSemanaSelecionado})`
 
     window.open(`https://wa.me/5533984523678?text=${mensagem}`)
   })
