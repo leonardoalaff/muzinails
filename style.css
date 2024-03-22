@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
 
 * {
     margin: 0;
@@ -174,25 +175,73 @@ color: #2e0218;
     margin: auto;
     margin-bottom: 30px;
     border-radius: 13px;
-    background: #ff3298 url('imagens/icones/esmalte.svg') no-repeat;
+    background: #FDCFDD url('imagens/icones/esmalte.svg') no-repeat;
     background-position: center center;
     background-size: contain;
 }
 .icone-p {
     position: relative;
     top: 60px;
-    left: 2px;
+    text-align: center;
     font-size: 0.6rem;
     font-weight: bold;
 }
 
 .icone1 {
-  background: url('https://cdn.awsli.com.br/600x450/854/854377/produto/205400700fed59c3ed9.jpg') no-repeat;
+  background: url('imagens/carreira/esmaltes.svg') no-repeat;
   background-position: center center;
   background-size: cover;
 }
-.icone-p1{
+.icone-p1 {
 
+}
+
+.icone2 {
+  background: #FDCFDD url('imagens/carreira/secador.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.icone-p2 {
+
+}
+
+.icone3 {
+  background: #FDCFDD url('imagens/carreira/maquiagem.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.icone-p3 {
+
+}
+
+.icone4 {
+  background: #FDCFDD url('imagens/carreira/roupas.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.icone-p4 {
+
+}
+
+.icone5 {
+  background: #FDCFDD url('imagens/carreira/acessorios.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.icone6 {
+  background: #FDCFDD url('imagens/carreira/saude.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.icone7 {
+  background: #FDCFDD url('imagens/carreira/calcados.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.icone8 {
+  background: #FDCFDD url('imagens/carreira/bolsas.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 /************* SESSÃO 2 *************/
@@ -237,11 +286,46 @@ color: #2e0218;
 .rolagem2-texto {
     font-size: 1rem;
     color: black;
-    width: 24vh;
-    margin-top: 1.5vh;
+    width: 100%;
+    margin-top: 1vh;
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: relative;
+    font-family: "Imprima", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+.p-rol2 {
+  margin: 0.6vh;
+  text-align: center;
+}
+
+.img-rolagem2-1 {
+  background: url('imagens/rolagem2/blindagem.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.img-rolagem2-2 {
+  background: url('imagens/rolagem2/fibra-de-vidro.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.img-rolagem2-3 {
+  background: url('imagens/rolagem2/manutencao.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.img-rolagem2-4 {
+  background: url('imagens/rolagem2/banho-de-gel.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.img-rolagem2-5 {
+  background: url('imagens/rolagem2/manicure-e-pedicure.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 
@@ -304,6 +388,9 @@ table {
     display: flex;
     justify-content: center;
     text-align: center;
+    font-family: "Imprima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   .opcao {
     display: flex;
@@ -322,6 +409,10 @@ table {
     margin-top: 8vh;
     margin-left: 10px;
   }
+  .marcar-horario h3 {
+    text-align: center;
+  }
+
   .marcar-horario h5 {
     margin-top: 2vh;
     color: gray;
