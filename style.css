@@ -33,7 +33,7 @@ body {
     background: url('imagens/icones/home2.svg') no-repeat;
     background-position: center center;
     background-size: contain;
-    transition: 1s;
+    transition: 0.5s;
     transform: rotateY(360deg);
 }
 
@@ -47,7 +47,7 @@ body {
     background: url('imagens/icones/calendario2.svg') no-repeat;
     background-position: center center;
     background-size: contain;
-    transition: 1s;
+    transition: 0.5s;
     transform: rotateY(360deg);
 }
 
@@ -61,7 +61,7 @@ body {
     background: url('imagens/icones/msg2.svg') no-repeat;
     background-position: center center;
     background-size: contain;
-    transition: 1s;
+    transition: 0.5s;
     transform: rotateY(360deg);
 }
 
@@ -164,6 +164,10 @@ margin-top: 15px;
     top: 15px;
     display: flex;
 }
+#sessao1 h3 {
+text-align: center;
+color: #2e0218;
+}
 .icone {
     width: 15vw;
     height: 55px;
@@ -180,6 +184,15 @@ margin-top: 15px;
     left: 2px;
     font-size: 0.6rem;
     font-weight: bold;
+}
+
+.icone1 {
+  background: url('https://cdn.awsli.com.br/600x450/854/854377/produto/205400700fed59c3ed9.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.icone-p1{
+
 }
 
 /************* SESSÃO 2 *************/
