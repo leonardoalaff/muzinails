@@ -133,7 +133,6 @@ margin-top: 15px;
     height: 27vh;
     position: absolute;
     top: 7vh;
-    right: 2%;
     display: flex;
     align-items: center;
     overflow-x: auto;
@@ -147,7 +146,8 @@ margin-top: 15px;
     background-position: right center;
     min-width: 80vw;
     min-height: 20vh;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
 }
@@ -271,7 +271,8 @@ color: #2e0218;
 .box-img-rolagem2 {
     background: white;
     height: 27vh;
-    margin-left: 5vw;
+    margin-left: 3vw;
+    margin-right: 10px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
 }
