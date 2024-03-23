@@ -175,6 +175,8 @@ color: #2e0218;
     margin: auto;
     margin-bottom: 30px;
     border-radius: 13px;
+    text-decoration: none;
+    color: black;
     background: #FDCFDD url('imagens/icones/esmalte.svg') no-repeat;
     background-position: center center;
     background-size: contain;
@@ -269,8 +271,9 @@ color: #2e0218;
 }
 
 .box-img-rolagem2 {
-    background: white;
+  background: white;
     height: 27vh;
+    width: 47vw;
     margin-left: 3vw;
     margin-right: 10px;
     border-radius: 20px;
@@ -280,8 +283,8 @@ color: #2e0218;
     background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5S8v4YtR5XtagR5HDrXhi2rk4r3ihSUR_EZmXEgSjeL_97SAUjWQ1zzpNRs9FqJM8PZc&usqp=CAU') no-repeat;
     background-size: cover;
     background-position: right center;
-    min-width: 44.51vw;
-    min-height: 20vh;
+    width: 47.5vw;
+    height: 20vh;
     border-radius: 20px;
 }
 .rolagem2-texto {
@@ -297,8 +300,12 @@ color: #2e0218;
     font-style: normal;
 }
 .p-rol2 {
+  color: black;
   margin: 0.6vh;
   text-align: center;
+  font-family: "Imprima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .img-rolagem2-1 {
