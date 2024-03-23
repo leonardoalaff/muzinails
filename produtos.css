@@ -30,14 +30,11 @@
     margin-top: 100px;
     border-radius: 10px 10px 0 0;
     border: 1px solid black;
-    z-index: 2;
 }
 .texto {
     background: whitesmoke;
     height: 80px;
-    width: 101.7%;
     position: relative;
-    left: -1px;
     top: calc(100%);
     display: flex;
     justify-content: center;
