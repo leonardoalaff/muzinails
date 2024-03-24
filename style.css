@@ -97,7 +97,7 @@ margin-top: 15px;
   font-weight: 400;
   font-style: normal;
   font-size: 25px;
-  color: black;
+  color: green;
   margin-right: 20px;
   margin-top: 13px;
 }
@@ -111,7 +111,7 @@ margin-top: 15px;
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
-    color: black;
+    color: red;
     margin-right: 20px;
     margin-top: 13px;
   }
@@ -170,8 +170,8 @@ text-align: center;
 color: #2e0218;
 }
 .icone {
-    width: 15vw;
-    height: 55px;
+    width: 22%;
+    height: 70px;
     margin: auto;
     margin-bottom: 30px;
     border-radius: 13px;
@@ -183,7 +183,7 @@ color: #2e0218;
 }
 .icone-p {
     position: relative;
-    top: 60px;
+    top: 75px;
     text-align: center;
     font-size: 0.6rem;
     font-weight: bold;
@@ -249,7 +249,7 @@ color: #2e0218;
 /************* SESSÃO 2 *************/
 #sessao2 {
     position: absolute;
-    top: 2vh;
+    top: 4vh;
     margin-top: 65vh;
     width: 100%;
 }
@@ -357,7 +357,6 @@ table {
     background: #ff3298;
     width: 100%;
     border-collapse: collapse;
-    border-radius: 0 0 30px 30px;
   }
 
   th, td {
@@ -392,7 +391,7 @@ table {
 
   .titulo-s3 {
     font-size: 1.4em;
-    margin-top: 5vh;
+    margin-top: 4vh;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -414,11 +413,13 @@ table {
   }
 
   .marcar-horario {
-    margin-top: 8vh;
+    margin-top: 6vh;
     margin-left: 10px;
   }
   .marcar-horario h3 {
+    color: rgb(48, 48, 48);
     text-align: center;
+    font-size: 2em;
   }
 
   .marcar-horario h5 {
@@ -441,7 +442,7 @@ table {
     padding: 10px 5%;
     border: none;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-left: 35%;
     margin-top: 5vh;
 }
@@ -496,7 +497,7 @@ table {
   }
 
   footer {
-    background: #ff3298;
+    background: #FDCFDD;
     position: absolute;
     top: 110vh;
     width: 100%;
@@ -505,8 +506,10 @@ table {
 }
 
 footer p {
-    color: white;
+    color: rgb(73, 73, 73);
     margin: 14px;
+    position: relative;
+    top: 1vh;
 }
 .leonardo {
     text-align: center;
@@ -515,5 +518,16 @@ footer p {
 
 footer a {
     text-decoration: none;
-    color: white;
+    color: rgb(73, 73, 73);
+}
+
+.nova-aba {
+  background: url('imagens/icones/nova-aba.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: 3vh;
+  right: 12%;
 }

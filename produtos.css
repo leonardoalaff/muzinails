@@ -9,11 +9,11 @@
 
 body {
     height: 140vh;
-    background: #FDCFDD;
+    background: rgb(245, 244, 244);
 }
 
 header {
-    background: #ff3298;
+    background: white;
     position: absolute;
     height: 14vh;
     width: 100%;
@@ -24,42 +24,38 @@ header {
     width: 140px;
     letter-spacing: 10px;
     position: absolute;
-    top: 5.3vh;
+    top: 7vh;
     font-size: 25px;
-    color: white;
+    color: black;
     margin-left: 20px;
     font-weight: lighter;
 }
 .traco {
     height: 2px;
-    width: 100px;
-    background: white;
+    width: 31%;
+    background: black;
     position: absolute;
-    right: 20px;
-    top: 7vh;
+    right: 4%;
+    top: 8.8vh;
 }
 
 .voltar {
-    background: rgb(126, 1, 88);
-    color: white;
+    width: 11%;
+    font-size: 40px;
+    color: black;
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
-    position: absolute;
-    top: 12vh;
-    left: 2%;
+    position: relative;
+    left: 3%;
     height: 4vh;
-    width: 20%;
     text-decoration: none;
-    z-index: 10;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 }
 
 .box-geral {
     position: absolute;
     top: 10vh;
-    background: #FDCFDD;
+    background: rgb(245, 244, 244);
 }
 
 .box-produtos {
