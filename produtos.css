@@ -7,14 +7,59 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    height: 140vh;
+    background: #FDCFDD;
+}
+
+header {
+    background: #ff3298;
+    position: absolute;
+    height: 14vh;
+    width: 100%;
+    z-index: 1;
+}
+
 .titulo {
-    text-align: center;
-    margin: 15px;
+    width: 140px;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 5.3vh;
+    font-size: 25px;
+    color: white;
+    margin-left: 20px;
+    font-weight: lighter;
+}
+.traco {
+    height: 2px;
+    width: 100px;
+    background: white;
+    position: absolute;
+    right: 20px;
+    top: 7vh;
+}
+
+.voltar {
+    background: rgb(126, 1, 88);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 12vh;
+    left: 2%;
+    height: 4vh;
+    width: 20%;
+    text-decoration: none;
+    z-index: 10;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 }
 
 .box-geral {
     position: absolute;
-    top: 0;
+    top: 10vh;
+    background: #FDCFDD;
 }
 
 .box-produtos {
@@ -23,17 +68,18 @@
 .produtos {
     text-decoration: none;
     background: green;
-    width: 40%;
-    height: 130px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 100px;
+    width: 46%;
+    height: 160px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-top: 60px;
     border-radius: 10px 10px 0 0;
-    border: 1px solid black;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.514);
 }
 .texto {
     background: whitesmoke;
-    height: 80px;
+    height: 50px;
+    width: 100%;
     position: relative;
     top: calc(100%);
     display: flex;
@@ -41,16 +87,16 @@
     align-items: center;
     color: black;
     border-radius: 0 0 10px 10px;
-    font-size: 14px;
+    font-size: 12px;
     padding: 10px;
-    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.514);
 }
 .preco {
     height: 30px;
     width: 70px;
     position: relative;
-    background: black;
-    top: -80px;
+    background: orangered;
+    top: -50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +108,48 @@
 /********* PRODUTOS *********/
 .produto1 {
     background: url('imagens/produtos/esmaltes/esmalte-anitta.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto2 {
+    background: url('imagens/produtos/esmaltes/esmalte-zem.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto3 {
+    background: url('imagens/produtos/esmaltes/esmalte-impala.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto4 {
+    background: url('imagens/produtos/esmaltes/esmalte-zem-led.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto5 {
+    background: url('imagens/produtos/esmaltes/kit-francesinha.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto6 {
+    background: url('imagens/produtos/esmaltes/esmalte-polish.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto7 {
+    background: url('imagens/produtos/esmaltes/risque-diamond-gel.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto8 {
+    background: url('imagens/produtos/esmaltes/risque-nude.svg') no-repeat;
     background-position: center center;
     background-size: cover;
 }
