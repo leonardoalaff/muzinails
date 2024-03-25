@@ -7,6 +7,7 @@ const calendario = document.querySelector('.calendario')
 const sessao3 = document.querySelector('#sessao3')
 const sessao4 = document.querySelector('#sessao4')
 const conferir = document.querySelector('.conferir')
+const cabeca = document.querySelector('#cabeca')
 const ter = document.querySelector('.ter')
 const qua = document.querySelector('.qua')
 const qui = document.querySelector('.qui')
@@ -43,6 +44,7 @@ msg.addEventListener('click', () => {
     calendario.classList.remove('active')
     sessao3.classList.remove('active')
     sessao4.classList.add('active')
+    cabeca.classList.remove('active')
 })
 
 home.addEventListener('click', () => {
@@ -51,6 +53,7 @@ home.addEventListener('click', () => {
     calendario.classList.remove('active')
     sessao3.classList.remove('active')
     sessao4.classList.remove('active')
+    cabeca.classList.remove('active')
 })
 
 calendario.addEventListener('click', () => {
@@ -59,6 +62,7 @@ calendario.addEventListener('click', () => {
     home.classList.remove('active')
     sessao3.classList.add('active')
     sessao4.classList.remove('active')
+    cabeca.classList.add('active')
     
 })
 

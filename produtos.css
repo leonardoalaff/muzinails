@@ -101,7 +101,7 @@ header {
     border-radius: 10px;
 }
 
-/********* PRODUTOS *********/
+/********* PRODUTOS ESMALTES *********/
 .produto1 {
     background: url('imagens/produtos/esmaltes/esmalte-anitta.svg') no-repeat;
     background-position: center center;
@@ -146,6 +146,56 @@ header {
 
 .produto8 {
     background: url('imagens/produtos/esmaltes/risque-nude.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/********* PRODUTOS CABELO *********/
+.produto-cab1 {
+    background: url('imagens/produtos/cabelo/escova-giratoria.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-cab2 {
+    background: url('imagens/produtos/cabelo/protetor-termico.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-cab3 {
+    background: url('imagens/produtos/cabelo/secador-philco.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-cab4 {
+    background: url('imagens/produtos/cabelo/kit-hidra-shampoo.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-cab5 {
+    background: url('imagens/produtos/cabelo/faixa-cabeca.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-cab6 {
+    background: url('imagens/produtos/cabelo/kit-creme-pentear.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-cab7 {
+    background: url('imagens/produtos/cabelo/secador-britania.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-cab8 {
+    background: url('imagens/produtos/cabelo/secador-de-parede.svg') no-repeat;
     background-position: center center;
     background-size: cover;
 }
