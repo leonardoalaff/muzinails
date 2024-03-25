@@ -8,14 +8,14 @@
 }
 
 body {
-    height: 140vh;
+    height: 100%;
     background: rgb(245, 244, 244);
 }
 
 header {
     background: white;
     position: absolute;
-    height: 14vh;
+    height: 9vh;
     width: 100%;
     z-index: 1;
 }
@@ -26,7 +26,7 @@ header {
     justify-content: center;
     letter-spacing: 10px;
     position: absolute;
-    top: 7vh;
+    top: 3.5vh;
     font-size: 25px;
     color: black;
     font-weight: lighter;
@@ -41,7 +41,7 @@ header {
     align-items: center;
     position: relative;
     left: 3%;
-    height: 4vh;
+    height: 9.9vh;
     text-decoration: none;
 }
 
@@ -49,10 +49,15 @@ header {
     position: absolute;
     top: 10vh;
     background: rgb(245, 244, 244);
+    height: auto;
 }
 
 .box-produtos {
-    display: flex;justify-content: center;
+    position: relative;
+    top: -70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }
 .produtos {
     text-decoration: none;
@@ -262,31 +267,57 @@ header {
 }
 
 .produto-maq8 {
-    background: url('imagens/produtos/cabelo/secador-de-parede.svg') no-repeat;
+    background: url('imagens/produtos/maquiagem/batom-liquido.svg') no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
-.produto-maq9 {
-    background: url('imagens/produtos/cabelo/chapinha.svg') no-repeat;
+
+/********* PRODUTOS ROUPAS *********/
+.produto-rou1 {
+    background: url('imagens/produtos/roupas/vestido-mid.svg') no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
-.produto-maq10 {
-    background: url('imagens/produtos/cabelo/escova-anion-hair.svg') no-repeat;
+.produto-rou2 {
+    background: url('imagens/produtos/roupas/saia-plissada.svg') no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
-.produto-maq11 {
-    background: url('imagens/produtos/cabelo/kit-new-hair-shampoo.svg') no-repeat;
+.produto-rou3 {
+    background: url('imagens/produtos/roupas/calca-alfaiataria.svg') no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
-.produto-maq12 {
-    background: url('imagens/produtos/cabelo/kit-any-liss-shampoo.svg') no-repeat;
+.produto-rou4 {
+    background: url('imagens/produtos/roupas/pijama.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-rou5 {
+    background: url('imagens/produtos/roupas/calca-alfaiataria2.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-rou6 {
+    background: url('imagens/produtos/roupas/short.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-rou7 {
+    background: url('imagens/produtos/maquiagem/delineador2.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-rou8 {
+    background: url('imagens/produtos/maquiagem/batom-liquido.svg') no-repeat;
     background-position: center center;
     background-size: cover;
 }
