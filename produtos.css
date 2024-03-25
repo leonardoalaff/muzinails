@@ -21,22 +21,15 @@ header {
 }
 
 .titulo {
-    width: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     letter-spacing: 10px;
     position: absolute;
     top: 7vh;
     font-size: 25px;
     color: black;
-    margin-left: 20px;
     font-weight: lighter;
-}
-.traco {
-    height: 2px;
-    width: 31%;
-    background: black;
-    position: absolute;
-    right: 4%;
-    top: 8.8vh;
 }
 
 .voltar {
@@ -103,7 +96,7 @@ header {
 
 /********* PRODUTOS ESMALTES *********/
 .produto1 {
-    background: url('imagens/produtos/esmaltes/esmalte-anitta.svg') no-repeat;
+    background: url('esmaltes/esmalte-anitta.svg') no-repeat;
     background-position: center center;
     background-size: cover;
 }
@@ -196,6 +189,104 @@ header {
 
 .produto-cab8 {
     background: url('imagens/produtos/cabelo/secador-de-parede.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-cab9 {
+    background: url('imagens/produtos/cabelo/chapinha.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-cab10 {
+    background: url('imagens/produtos/cabelo/escova-anion-hair.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-cab11 {
+    background: url('imagens/produtos/cabelo/kit-new-hair-shampoo.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-cab12 {
+    background: url('imagens/produtos/cabelo/kit-any-liss-shampoo.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/********* PRODUTOS MAQUIAGEM *********/
+.produto-maq1 {
+    background: url('imagens/produtos/maquiagem/kit-maquiagem.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-maq2 {
+    background: url('imagens/produtos/maquiagem/kit-maquiagem2.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-maq3 {
+    background: url('imagens/produtos/maquiagem/espelho.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-maq4 {
+    background: url('imagens/produtos/maquiagem/blush.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-maq5 {
+    background: url('imagens/produtos/maquiagem/batom.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-maq6 {
+    background: url('imagens/produtos/maquiagem/delineador.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-maq7 {
+    background: url('imagens/produtos/maquiagem/delineador2.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-maq8 {
+    background: url('imagens/produtos/cabelo/secador-de-parede.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-maq9 {
+    background: url('imagens/produtos/cabelo/chapinha.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-maq10 {
+    background: url('imagens/produtos/cabelo/escova-anion-hair.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-maq11 {
+    background: url('imagens/produtos/cabelo/kit-new-hair-shampoo.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.produto-maq12 {
+    background: url('imagens/produtos/cabelo/kit-any-liss-shampoo.svg') no-repeat;
     background-position: center center;
     background-size: cover;
 }
