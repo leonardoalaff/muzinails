@@ -22,6 +22,8 @@ const duas = document.querySelector('.duas')
 const tres = document.querySelector('.tres')
 const quatro = document.querySelector('.quatro')
 const cinco = document.querySelector('.cinco')
+const aberto = document.querySelector('#aberto')
+const fechado = document.querySelector('#fechado')
 let informacao = document.querySelector('.informacao')
 
 
@@ -138,17 +140,16 @@ const tbody = document.querySelector('#calendario tbody');
     let hora = today.getHours()
     let minuto = today.getMinutes()
 
-    if(diaDaSemana >= 2 && diaDaSemana <=6 && hora >= 8 && hora <= 18) {
-      fechado.classList.remove('active')
+    if((diaDaSemana === 1 && hora >= 8 && hora <= 12) || (diaDaSemana >= 3 && diaDaSemana <=6)) {
       aberto.classList.add('active')
-    } else {
-      aberto.classList.remove('active')
-      fechado.classList.add('active')
+      fechado.classList.remove('active')
     }
   }
 
   horario()
-  setInterval(horario(), 1000)
+  setInterval(horario, 1000)
+
+  
 
 
   //******** MARCAR HORÁRIO *********/
