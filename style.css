@@ -95,41 +95,44 @@ margin-top: 15px;
 }
 
 #aberto {
+  background: url('imagens/icones/Aberto.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
   display: none;
-  font-family: "Redressed", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 25px;
-  color: green;
   margin-right: 20px;
-  margin-top: 13px;
+  margin-top: 5px;
+  animation: mover 1.3s infinite ease-in-out;
 }
 #aberto.active {
     display: block;
 }
 
 #fechado {
-    display: none;
-    font-family: "Redressed", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 25px;
-    color: red;
-    margin-right: 20px;
-    margin-top: 1vh;
-  }
-  #fechado.active {
+  background: url('imagens/icones/fechado.svg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  display: none;
+  margin-right: 20px;
+  margin-top: 5px;
+  animation: mover 1.3s infinite ease-in-out;
+}
+#fechado.active {
     display: block;
-  }
+}
 
 @keyframes mover {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(10px);
-    }
+  0%, 100% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
 }
+
 
 #rolagem {
     width: 100%;
@@ -534,5 +537,5 @@ footer a {
   width: 18px;
   height: 18px;
   bottom: 3vh;
-  right: 12%;
+  right: 12%
 }

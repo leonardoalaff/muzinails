@@ -22,9 +22,9 @@ const duas = document.querySelector('.duas')
 const tres = document.querySelector('.tres')
 const quatro = document.querySelector('.quatro')
 const cinco = document.querySelector('.cinco')
-const aberto = document.querySelector('#aberto')
-const fechado = document.querySelector('#fechado')
 let informacao = document.querySelector('.informacao')
+
+
 
 
 
@@ -134,21 +134,7 @@ const tbody = document.querySelector('#calendario tbody');
 
 
 
-  function horario() {
-    let today = new Date()
-    let diaDaSemana = today.getDay()
-    let hora = today.getHours()
-    let minuto = today.getMinutes()
-
-    if((diaDaSemana === 1 && hora >= 8 && hora <= 12) || (diaDaSemana >= 3 && diaDaSemana <=6)) {
-      aberto.classList.add('active')
-      fechado.classList.remove('active')
-    }
-  }
-
-  horario()
-  setInterval(horario, 1000)
-
+  
   
 
 
