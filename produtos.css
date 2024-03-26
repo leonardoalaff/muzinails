@@ -101,7 +101,7 @@ header {
 
 /********* PRODUTOS ESMALTES *********/
 .produto1 {
-    background: url('esmaltes/esmalte-anitta.svg') no-repeat;
+    background: url('imagens/produtos/esmaltes/esmalte-anitta.svg') no-repeat;
     background-position: center center;
     background-size: cover;
 }

@@ -148,7 +148,7 @@ margin-top: 15px;
 }
 .img-rolagem {
     background: url('imagens/banners/R$\ 250.png') no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: right center;
     min-width: 80vw;
     min-height: 20vh;
@@ -156,6 +156,17 @@ margin-top: 15px;
     margin-right: 10px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
+}
+
+.img-rolagem-1 {
+  background: url('imagens/rolagem/escova-rotativa.svg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.img-rolagem-2 {
+  background: url('imagens/rolagem/manicure-pedicure.svg') no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 /************* SESSÃO 1 *************/
