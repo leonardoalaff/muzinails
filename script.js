@@ -22,6 +22,9 @@ const duas = document.querySelector('.duas')
 const tres = document.querySelector('.tres')
 const quatro = document.querySelector('.quatro')
 const cinco = document.querySelector('.cinco')
+const nome = document.querySelector('#nome')
+const opcoes = document.querySelector('#opcoes')
+const opServico = document.querySelector('#op-servico')
 let informacao = document.querySelector('.informacao')
 
 
@@ -133,140 +136,7 @@ const tbody = document.querySelector('#calendario tbody');
   criarCalendario(dataAtual.getMonth(), dataAtual.getFullYear());
 
 
-
-  
-  
-
-
   //******** MARCAR HORÁRIO *********/
-  let pedido = {
-    oitoM: '08:00',
-    noveM: '09:00',
-    dezM: '10:00',
-    onzeM: '11:00',
-
-    umaT: '13:00',
-    duasT: '14:00',
-    tresT: '15:00',
-    quatroT: '16:00',
-    cincoT: '17:00'
-  }
-
-
-  oit.addEventListener('click', () => {
-    oit.classList.add('active')
-    nov.classList.remove('active')
-    dez.classList.remove('active')
-    onz.classList.remove('active')
-
-    uma.classList.remove('active')
-    duas.classList.remove('active')
-    tres.classList.remove('active')
-    quatro.classList.remove('active')
-    cinco.classList.remove('active')
-  })
-  nov.addEventListener('click', () => {
-    oit.classList.remove('active')
-    nov.classList.add('active')
-    dez.classList.remove('active')
-    onz.classList.remove('active')
-
-    uma.classList.remove('active')
-    duas.classList.remove('active')
-    tres.classList.remove('active')
-    quatro.classList.remove('active')
-    cinco.classList.remove('active')
-  })
-  dez.addEventListener('click', () => {
-    oit.classList.remove('active')
-    nov.classList.remove('active')
-    dez.classList.add('active')
-    onz.classList.remove('active')
-
-    uma.classList.remove('active')
-    duas.classList.remove('active')
-    tres.classList.remove('active')
-    quatro.classList.remove('active')
-    cinco.classList.remove('active')
-  })
-  onz.addEventListener('click', () => {
-    oit.classList.remove('active')
-    nov.classList.remove('active')
-    dez.classList.remove('active')
-    onz.classList.add('active')
-
-    uma.classList.remove('active')
-    duas.classList.remove('active')
-    tres.classList.remove('active')
-    quatro.classList.remove('active')
-    cinco.classList.remove('active')
-  })
-
-
-  uma.addEventListener('click', () => {
-    oit.classList.remove('active')
-    nov.classList.remove('active')
-    dez.classList.remove('active')
-    onz.classList.remove('active')
-
-    uma.classList.add('active')
-    duas.classList.remove('active')
-    tres.classList.remove('active')
-    quatro.classList.remove('active')
-    cinco.classList.remove('active')
-  })
-  duas.addEventListener('click', () => {
-    oit.classList.remove('active')
-    nov.classList.remove('active')
-    dez.classList.remove('active')
-    onz.classList.remove('active')
-
-    uma.classList.remove('active')
-    duas.classList.add('active')
-    tres.classList.remove('active')
-    quatro.classList.remove('active')
-    cinco.classList.remove('active')
-  })
-  tres.addEventListener('click', () => {
-    oit.classList.remove('active')
-    nov.classList.remove('active')
-    dez.classList.remove('active')
-    onz.classList.remove('active')
-
-    uma.classList.remove('active')
-    duas.classList.remove('active')
-    tres.classList.add('active')
-    quatro.classList.remove('active')
-    cinco.classList.remove('active')
-  })
-  quatro.addEventListener('click', () => {
-    oit.classList.remove('active')
-    nov.classList.remove('active')
-    dez.classList.remove('active')
-    onz.classList.remove('active')
-
-    uma.classList.remove('active')
-    duas.classList.remove('active')
-    tres.classList.remove('active')
-    quatro.classList.add('active')
-    cinco.classList.remove('active')
-  })
-  cinco.addEventListener('click', () => {
-    oit.classList.remove('active')
-    nov.classList.remove('active')
-    dez.classList.remove('active')
-    onz.classList.remove('active')
-
-    uma.classList.remove('active')
-    duas.classList.remove('active')
-    tres.classList.remove('active')
-    quatro.classList.remove('active')
-    cinco.classList.add('active')
-  })
-
-
-
-
   conferir.addEventListener('click', () => {
     let today = new Date()
     let horas = today.getHours()
@@ -274,48 +144,21 @@ const tbody = document.querySelector('#calendario tbody');
     let hora = undefined
     let cumprimento = undefined
 
-
-    if(oit.classList.contains('active')) {
-      hora = pedido.oitoM
-    }
-    if(nov.classList.contains('active')) {
-      hora = pedido.noveM
-    }
-    if(dez.classList.contains('active')) {
-      hora = pedido.dezM
-    }
-    if(onz.classList.contains('active')) {
-      hora = pedido.onzeM
-    }
-
-
-    if(uma.classList.contains('active')) {
-      hora = pedido.umaT
-    }
-    if(duas.classList.contains('active')) {
-      hora = pedido.duasT
-    }
-    if(tres.classList.contains('active')) {
-      hora = pedido.tresT
-    }
-    if(quatro.classList.contains('active')) {
-      hora = pedido.quatroT
-    }
-    if(cinco.classList.contains('active')) {
-      hora = pedido.cincoT
-    }
-
     if(horas >= 1 && horas < 12) {
       cumprimento = 'Bom dia'
     }
     if(horas >= 12 && horas <= 17 ) {
       cumprimento = 'Boa tarde'
     }
-    if(horas >= 18 && horas <= 23 ) {
+    if(horas >= 18 && horas <= 23) {
       cumprimento = 'Boa noite'
-    }
+    } 
+    else {cumprimento = 'Boa noite'}
 
-    let mensagem = `${cumprimento}, você está disponível no dia ${numeroSelecionado} de ${mesesDoAno[mesSelecionado]} (${diaDaSemanaSelecionado}) às ${hora}?`
+    let opcaoSelecionada = opcoes.value
+    let servicoSelecionado = opServico.value
+
+    let mensagem = `${cumprimento}, Andréia. Você está disponível no dia e horário abaixo?%0A %0A Dia: ${numeroSelecionado} de ${mesesDoAno[mesSelecionado]} (${diaDaSemanaSelecionado})%0A Horário: ${opcaoSelecionada}%0A Serviço: ${servicoSelecionado}%0A Nome da cliente: ${nome.value}`
 
     window.open(`https://wa.me/5533984523678?text=${mensagem}`)
   })

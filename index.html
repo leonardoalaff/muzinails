@@ -38,7 +38,7 @@
         </div>
 
         <div class="carreira">
-            <div class="icone icone5"><p class="icone-p icone-p5">Acessórios</p></div>
+            <a href="acessorios.html" class="icone icone5"><p class="icone-p icone-p5">Acessórios</p></a>
 
             <div class="icone icone6"><p class="icone-p icone-p6">Saúde</p></div>
 
@@ -111,21 +111,42 @@
   </thead>
   <tbody></tbody>
 </table>
-
-
-        <h2 class="titulo-s3">Escolha um dia e hora para ver se está disponível</h2>
         
 
         <div class="marcar-horario">
             <h3>Horário</h3>
-            <h5>MANHÃ</h5>
-            <div class="opcao"><p class="oit">08:00</p> <p class="nov">09:00</p> <p class="dez">10:00</p> <p class="onz">11:00</p></div>
-
-            <h5>TARDE</h5>
-            <div class="opcao"><p class="uma">13:00</p> <p class="duas">14:00</p> <p class="tres">15:00</p> <p class="quatro">16:00</p> <p class="cinco">17:00</p></div>
+            <select name="" id="opcoes">
+                <option value="08:00" class="hr">08:00</option>
+                <option value="09:00" class="hr">09:00</option>
+                <option value="10:00" class="hr">10:00</option>
+                <option value="11:00" class="hr">11:00</option>
+                <option value="13:00" class="hr">13:00</option>
+                <option value="14:00" class="hr">14:00</option>
+                <option value="15:00" class="hr">15:00</option>
+                <option value="16:00" class="hr">16:00</option>
+                <option value="17:00" class="hr">17:00</option>
+            </select>
         </div>
 
+        <div class="escolher-servico">
+            <h3>Serviço</h3>
+            <select name="" id="op-servico">
+                <option class="serv">Blindagem R$40,00</opetion>
+                <option class="serv">Fibra de vidro R$90,00</opetion>
+                <option class="serv">Manutenção R$60,00</opetion>
+                <option class="serv">Banho de gel R$50,00</opetion>
+                <option class="serv">Manicure e Pedicure R$34,00</option>
+            </select>
+        </div>
+
+        <div id="box-nome">
+            <input type="text" placeholder="Digite seu nome..." id="nome">
+        </div>
+        
         <button class="conferir">CONFERIR</button>
+        
+        <h2 class="titulo-s3">Selecione um dia, hora, serviço e digite seu nome. Logo após, cique em conferir para saber se o horário está disponível</h2>
+        
     </section>
 
     <section id="sessao4">
