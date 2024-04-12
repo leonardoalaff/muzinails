@@ -9,11 +9,11 @@
 
 body {
     height: 100%;
-    background: rgb(245, 244, 244);
+    background-color: #f0f0f0;
 }
 
 header {
-    background: white;
+    background-color: #f0f0f0;
     position: absolute;
     height: 9vh;
     width: 100%;

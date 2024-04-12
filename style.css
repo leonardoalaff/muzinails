@@ -11,12 +11,13 @@
 }
 
 body {
+  background-color: #f0f0f0;
     height: 130vh;
 }
 
 #menu {
     height: 8vh;
-    background: white;
+    background-color: #f0f0f0;
     position: fixed;
     bottom: 0;
 }
@@ -75,7 +76,7 @@ nav {
     align-items: center;
     height: 70px;
     z-index: 900;
-    background: white;
+    background-color: #f0f0f0;
 }
 #cabeca {
   z-index: 1;
@@ -176,6 +177,7 @@ margin-top: 15px;
     position: absolute;
     left: 5%;
     margin-top: 28vh;
+    background-color: #f0f0f0;
 }
 .carreira {
     position: relative;
@@ -271,6 +273,7 @@ color: #2e0218;
     top: 4vh;
     margin-top: 65vh;
     width: 100%;
+    background-color: #f0f0f0;
 }
 
 #titulo-s2 {
@@ -367,6 +370,7 @@ color: #2e0218;
     height: 200vh;
     z-index: 2;
     transition: 0.3s;
+    background-color: #f0f0f0;
 }
 #sessao3.active {
     transition: 0.3s;
@@ -448,6 +452,7 @@ table {
     border-radius: 5px;
     color: #f80e83;
     border: 1px solid #f80e83;
+    background-color: #f0f0f0;
   }
   .hr {
     font-size: 15px;
@@ -469,6 +474,7 @@ table {
     border-radius: 5px;
     color: #f80e83;
     border: 1px solid #f80e83;
+    background-color: #f0f0f0;
   }
   .serv {
     font-size: 15px;
@@ -488,6 +494,7 @@ table {
   border-radius: 5px;
   color: #f80e83;
   border: 1px solid #f80e83;
+  background-color: #f0f0f0;
 }
 #nome::placeholder {
   font-size: 15px;
@@ -519,6 +526,7 @@ table {
     z-index: 2;
     transition: 0.3s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.568);
+    background-color: #f0f0f0;
   }
   #sessao4.active {
     left: 0;
