@@ -446,6 +446,8 @@ table {
     width: 60%;
     height: 5vh;
     border-radius: 5px;
+    color: #f80e83;
+    border: 1px solid #f80e83;
   }
   .hr {
     font-size: 15px;
@@ -465,19 +467,12 @@ table {
     width: 60%;
     height: 5vh;
     border-radius: 5px;
+    color: #f80e83;
+    border: 1px solid #f80e83;
   }
   .serv {
     font-size: 15px;
   }
-  
-  .oit.active, .nov.active, .dez.active, .onz.active,
-  
-  .uma.active, .duas.active, .tres.active, .quatro.active, .cinco.active {
-    background: #f80e83;
-    color: white;
-    border: 1px solid #f80e83;
-    transition: 0.3s;
-}
 
 #box-nome {
   width: 100%;
@@ -491,9 +486,12 @@ table {
   height: 5vh;
   width: 80%;
   border-radius: 5px;
+  color: #f80e83;
+  border: 1px solid #f80e83;
 }
 #nome::placeholder {
   font-size: 15px;
+  color: #f80e83;
 }
 
 .conferir {
