@@ -525,7 +525,6 @@ table {
     z-index: 2;
     transition: 0.3s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.568);
-    background-color: #f0f0f0;
   }
   #sessao4.active {
     left: 0;
