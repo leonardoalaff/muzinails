@@ -553,7 +553,7 @@ table {
   }
 
   footer {
-    background: black;
+    background: rgb(94, 94, 94);
     position: absolute;
     top: 110vh;
     width: 100%;
